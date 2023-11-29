@@ -1,68 +1,9 @@
-# Homepage
+# Internal DIOL wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Welcome to the Distributed Intelligence and Optimization Lab (DIOL) Wiki! :star2:
 
-## Code Annotation Examples
+Whether you're a seasoned researcher or a newcomer, we're thrilled to have you here. This wiki is a collaborative space for sharing knowledge, insights, and best practices within our diverse and dynamic laboratory.
 
-### Codeblocks
+We encourage you to contribute by writing guides on anything you find valuable – from optimizing algorithms to streamlining workflows. Your expertise is not only valuable to you but can greatly benefit others in our community. Let's build a repository of collective wisdom that propels us all forward.
 
-Some `code` goes here.
-
-### Plain codeblock
-
-A plain codeblock:
-
-```
-Some code here
-def myfunction()
-// some comment
-```
-
-#### Code for a specific language
-
-Some more code with the `py` at the start:
-
-``` py
-import tensorflow as tf
-def whatever()
-```
-
-#### With a title
-
-``` py title="bubble_sort.py"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### With line numbers
-
-``` py linenums="1"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### Highlighting lines
-
-``` py hl_lines="2 3"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-## Icons and Emojs
-
-:smile: 
-
-:fontawesome-regular-face-laugh-wink:
-
-:fontawesome-brands-twitter:{ .twitter }
-
-:octicons-heart-fill-24:{ .heart }
+To get started, check out the ["How To" page](how-to-wiki.md) where you can find a guide on how to write and deploy your contibution. Feel free to explore, contribute, and make this wiki a hub of shared intelligence. Happy writing! :rocket: :sparkles:

@@ -3,8 +3,11 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - toc.integrate
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
@@ -17,19 +20,21 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
+      primary: orange
+      accent: red 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
-      accent: lime
+      primary: amber
+      accent: deep orange
 
 nav:
   - Home: index.md
   - How to wiki: how-to-wiki.md
-  - Server: server-guide/
+  - Server: 
+    - server-guide/index.md
+    - Slurm: server-guide/slurm.md
 
 extra:
   social:

@@ -40,10 +40,12 @@ Delving into the `mkdocs.yml` file, pay particular attention to the `nav` sectio
 nav:
   - Home: index.md
   - How to wiki: how-to-wiki.md
-  - Server: server-guide/
+  - Server: 
+    - server-guide/index.md
+    - Slurm: server-guide/slurm.md
 ```
 
-Upon examination of this code snippet, it becomes evident that we have three tabs – namely, "Home," "How to Wiki," and "Server." Notably, the "Server" tab reveals additional subpages underneath it, cause it is represented by a folder. Delving into this tab provides the flexibility to choose a specific sub-topic for a more focused exploration
+Upon examination of this code snippet, it becomes evident that we have three tabs – namely, "Home," "How to Wiki," and "Server." Notably, the "Server" tab reveals additional subpages underneath it. Delving into this tab provides the flexibility to choose a specific sub-topic for a more focused exploration
 
 For instance, if you wish to include a page under the 'Server' tab, simply add a markdown file within the 'server-guide/' folder:
 
@@ -61,16 +63,19 @@ docs/
 ```
 
 If you intend to introduce a new tab labeled 'Transportation' and populate it with two pages for guides on 'How to Sit on Bus No. 5' and 'Forecasting of Buses Deviation,' the updated code would be:
-```yaml hl_lines="5"
+```yaml hl_lines="7 8 9"
 nav:
   - Home: index.md
   - How to wiki: how-to-wiki.md
-  - Server: server-guide/
-  - Transportation: transportation/
+  - Server: 
+    - server-guide/index.md
+    - Slurm: server-guide/slurm.md
+  - Transportation: 
+    - How to sit on Bus No. 5: transportation/sit-on-five.md
+    - Forecasting of Buses Deviation: transportation/bus-deviation.md
 ```
 and the new file structure will be:
-```text hl_lines="7 8 9"
-...
+```text hl_lines="6 7 8"
 docs/
     index.md
     how-to-wiki.md
@@ -80,11 +85,10 @@ docs/
         sit-on-five.md
         bus-deviation.md
     ...
-...
 ```
 
 ## Markdown basics
-Here, you'll discover fundamental markdown guidelines to commence your wiki contributions. Given the nature of likely contributions, such as guiding installations of libraries or ensuring code functionality, the emphasis will primarily be on effectively articulating code in markdown. For full documentation visit [mkdocs.org](https://www.mkdocs.org) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/)
+Here, you'll discover fundamental markdown guidelines to commence your wiki contributions. Given the nature of likely contributions, such as guiding installations of libraries or ensuring code functionality, the emphasis will primarily be on effectively articulating code in markdown. For full documentation visit [mkdocs.org](https://www.mkdocs.org) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
 
 ### Code blocks
@@ -190,7 +194,6 @@ Additionally, you have the option to incorporate aesthetically styled admonition
 Here is the markdown code snippet:
 ```markdown
 !!! note
-    NOTE:
     blablabla
 ```
 
