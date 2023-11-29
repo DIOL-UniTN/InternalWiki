@@ -26,6 +26,11 @@ theme:
       primary: teal
       accent: lime
 
+nav:
+  - Home: index.md
+  - How to wiki: how-to-wiki.md
+  - Server: server-guide/
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
