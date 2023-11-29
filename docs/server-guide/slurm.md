@@ -83,7 +83,6 @@ Replace `<your_job_id>` with the ID of the job you want to cancel.
 
 Here a tutorial to submit your first job! Connect to the server and start the tutorial.
 
-### Create python script
 Create a very simple python script in a custom folder `my_folder` and call it `my_py_script.py`:
 
 ```bash
