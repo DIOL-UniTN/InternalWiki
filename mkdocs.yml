@@ -36,6 +36,7 @@ nav:
     - server-guide/index.md
     - Slurm: server-guide/slurm.md
     - CTransformer Library: server-guide/ctransformers-library.md
+    - Ollama: server-guide/start-kill-ollama.md
 
 extra:
   social:
