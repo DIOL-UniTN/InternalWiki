@@ -28,7 +28,7 @@ export UNIX_CPLEX_DIR="$CPLEX_ROOT"
 export LDFLAGS="-L$CPLEX_ROOT/cplex/lib/arm64_osx/static_pic -L$CPLEX_ROOT/cplex/lib/arm64_osx -lz"
 export PATH="$HOME/.local/bin:$PATH"  # Ensure stubgen is found
 
-cmake -S . -B build -DBUILD_DEPS:BOOL=ON -DUSE_CPLEX=ON -DCPLEX_ROOT="$CPLEX_ROOT" -DBUILD_PYTHON:BOOL=ON -DPython3_EXECUTABLE=$(which python)
+cmake -S . -B build -DBUILD_DEPS:BOOL=ON -DUSE_CPLEX=ON -DCPLEX_ROOT="$CPLEX_ROOT" -DBUILD_PYTHON:BOOL=ON
 ```
 
 ## 4. Build OR-Tools
