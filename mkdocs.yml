@@ -40,6 +40,10 @@ nav:
   - OR Tools:
     - or-tools/index.md
     - CPLEX for Python: or-tools/CPLEX-python.md
+  - Workflow:
+    - workflow-management/index.md
+    - Hydra-MLflow: workflow-management/hydra-mlflow-python.md
+
 
 extra:
   social:
