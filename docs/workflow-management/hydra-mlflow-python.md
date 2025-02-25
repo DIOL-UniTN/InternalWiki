@@ -105,15 +105,16 @@ defaults:
 hydra:
   sweeper:
     job_name: ${proj_name}
-    queue_name: common_cpuQ
-    ncpus_per_node: 1
-    ngpus_per_node: 0
-    queue_node_limit: 10
-    time: 8
-    mem: 16
-    profile_file: ~/.bashrc # Sources before starting
+    queue_name: common_cpuQ # (str) – Queue name which goes on the “#PBS -N {name}” line of the pbs header)
+    ncpus_per_node: 1 # (int) – Number of CPU cores per node
+    ngpus_per_node: 0 # (int) – Number of GPUs per node
+    queue_node_limit: 10 # (int) – Maximum number of nodes allowed in this queue
+    time: 8 # (int) – The requested job walltime in hours
+    mem: 16 #  (str) – The requested memory size. String to allow specifying in G, MB, etc.
+    profile_file: ~/.bashrc # Sources before starting, (str) – The file setting the environment to source inside the PBS job.  Set to ‘’ if you do not wish to source a file.
+    requested_number_of_nodes: 1 # (int) – The number of compute nodes to request
 ```
-
+Further information about the configurations of the PBS can be found in [pbs4py][https://nasa.github.io/pbs4py/index.html].
 Again, your main config file `conf/main.yaml` should be:
 ```yaml
 ...
