@@ -94,6 +94,7 @@ Note that for this to run, we should install another python package you can find
 ### 1.2. Hydra on HPC
 [hpc_url]: https://docs.google.com/document/d/1u8aIAxgXTUoavdkOkAA5DX-COn0NhYeqdg-uYGgcdGs/edit?tab=t.0
 [pbs_launcher_repo]: https://github.com/berab/hydra/tree/main/plugins/pbs_launcher_plugin
+[pbs4py]: https://nasa.github.io/pbs4py/index.html
 [UniTN HPC cluster][hpc_url] uses PBS launcher which Hydra doesn't support. I wrote a 
 code merging pbs4py framework and hydra's sweeper. You can find the code repository and
 how to install it [here][pbs_launcher_repo].
@@ -114,7 +115,7 @@ hydra:
     profile_file: ~/.bashrc # Sources before starting, (str) – The file setting the environment to source inside the PBS job.  Set to ‘’ if you do not wish to source a file.
     requested_number_of_nodes: 1 # (int) – The number of compute nodes to request
 ```
-Further information about the configurations of the PBS can be found in [pbs4py][https://nasa.github.io/pbs4py/index.html].
+Further information about the configurations of the PBS can be found in [pbs4py][pbs4py].
 Again, your main config file `conf/main.yaml` should be:
 ```yaml
 ...
